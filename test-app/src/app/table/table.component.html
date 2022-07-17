@@ -1,1 +1,22 @@
-<p>table works!</p>
+<h2 class="container mt-3">POST</h2>
+<table id="articoli" border="1" class="container">
+  <thead>
+    <tr>
+      <th>UserId</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Body</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let datas of dati">
+      <td>{{ datas.userId }}</td>
+      <td>{{ datas.id }}</td>
+      <td>{{ datas.title }}</td>
+      <td>{{ datas.body }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
