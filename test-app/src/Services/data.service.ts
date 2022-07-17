@@ -9,8 +9,6 @@ import { ITab } from 'src/app/Models/table';
 })
 export class DataService {
 
-  data: ITab[] = [];
-
   constructor(private http: HttpClient) { }
 
   getData(): Observable<ITab[]> {
